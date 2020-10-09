@@ -13,4 +13,4 @@ description: A list of Map Icons
 
 ## Related Functions
 
-- [SetPlayerMapIcon](SetPlayerMapIcon): Create a mapicon for a player.
+- [SetPlayerMapIcon](../Functions/SetPlayerMapIcon): Create a mapicon for a player.

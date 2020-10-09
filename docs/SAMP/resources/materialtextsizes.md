@@ -23,4 +23,4 @@ description: A list of Material Text Sizes
 
 ## Related Functions
 
-- [SetObjectMaterialText](SetObjectMaterialText): Replace the texture of an object with text.
+- [SetObjectMaterialText](../Functions/SetObjectMaterialText): Replace the texture of an object with text.
