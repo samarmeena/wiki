@@ -34,7 +34,7 @@ Now we need to decide on a model to appear in the world, there are lots of model
 
 Finally we need a [Type](https://wiki.openmultiplayer.now.sh/docs/resources/pickuptypes) for the pickup, on the same page with the pickup models is a list of pickup types describing what the various ones do. We want this pickup to disappear when you pick it up, so you can't pick it up repeatedly, but to reappear after a few minutes so you can pick it up again, type 2 does just this.
 
-Pickups are most commonly created when the script starts, in [OnGameModeInit](../functions/OnGameModeInit) or [OnFilterScriptInit](../functions/OnFilterScriptInit) depending on the script type, however it can go in any function (for example you could create a weapon drop script which would use OnPlayerDeath to create weapon pickups).
+Pickups are most commonly created when the script starts, in [OnGameModeInit](../callbacks/OnGameModeInit) or [OnFilterScriptInit](../callbacks/OnFilterScriptInit) depending on the script type, however it can go in any function (for example you could create a weapon drop script which would use OnPlayerDeath to create weapon pickups).
 
 So here is the code to create our pickup, and store the ID in 'gMyPickup':
 
