@@ -1,7 +1,7 @@
 ---
 id: start
 title: Scripting Basics
-description: A short tutorial guiding you through the basics of the Pawn language and SA-MP/open.mp APIs.
+description: A short tutorial guiding you through the basics of the Pawn language and SA-MP APIs.
 sidebar_label: Scripting Basics
 ---
 
