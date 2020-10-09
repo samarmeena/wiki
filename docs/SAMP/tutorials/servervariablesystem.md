@@ -38,10 +38,10 @@ The SVar system is the same as the PVars, although the variables created are ser
 
 ## Related Functions
 
-- [SetSVarInt](../scripting/functions/SetSVarInt): set an integer for a server variable.
-- [GetSVarInt](../scripting/functions/GetSVarInt): get a player server as an integer.
-- [SetSVarString](../scripting/functions/SetSVarString): set a string for a server variable.
-- [GetSVarString](../scripting/functions/GetSVarString): get the previously set string from a server variable.
-- [SetSVarFloat](../scripting/functions/SetSVarFloat): set a float for a server variable.
-- [GetSVarFloat](../scripting/functions/GetSVarFloat): get the previously set float from a server variable
-- [DeleteSVar](../scripting/functions/DeleteSVar): delete a server variable.
+- [SetSVarInt](../functions/SetSVarInt): set an integer for a server variable.
+- [GetSVarInt](../functions/GetSVarInt): get a player server as an integer.
+- [SetSVarString](../functions/SetSVarString): set a string for a server variable.
+- [GetSVarString](../functions/GetSVarString): get the previously set string from a server variable.
+- [SetSVarFloat](../functions/SetSVarFloat): set a float for a server variable.
+- [GetSVarFloat](../functions/GetSVarFloat): get the previously set float from a server variable
+- [DeleteSVar](../functions/DeleteSVar): delete a server variable.

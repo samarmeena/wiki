@@ -40,4 +40,4 @@ public OnGameModeInit()
 
 - [Floatadd](Floatadd): Adds two floats.
 - [Floatmul](Floatmul): Multiplies two floats.
-- [Floatdiv](../funtions/Floatdiv): Divides a float by another.
+- [Floatdiv](Floatdiv): Divides a float by another.

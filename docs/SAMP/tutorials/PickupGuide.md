@@ -32,7 +32,7 @@ For this example we will create a cash pickup at Grove Street.
 
 Now we need to decide on a model to appear in the world, there are lots of models to choose from, some are listed on the external site [here](https://dev.prineside.com/en/gtasa_samp_model_id), here choose model number 1274 which is dollar sign.
 
-Finally we need a [Type](https://wiki.openmultiplayer.now.sh/docs/scripting/resources/pickuptypes) for the pickup, on the same page with the pickup models is a list of pickup types describing what the various ones do. We want this pickup to disappear when you pick it up, so you can't pick it up repeatedly, but to reappear after a few minutes so you can pick it up again, type 2 does just this.
+Finally we need a [Type](https://wiki.openmultiplayer.now.sh/docs/resources/pickuptypes) for the pickup, on the same page with the pickup models is a list of pickup types describing what the various ones do. We want this pickup to disappear when you pick it up, so you can't pick it up repeatedly, but to reappear after a few minutes so you can pick it up again, type 2 does just this.
 
 Pickups are most commonly created when the script starts, in [OnGameModeInit](../functions/OnGameModeInit) or [OnFilterScriptInit](../functions/OnFilterScriptInit) depending on the script type, however it can go in any function (for example you could create a weapon drop script which would use OnPlayerDeath to create weapon pickups).
 
@@ -46,7 +46,7 @@ gMyPickup = CreatePickup(1274, 2, 2491.7900, -1668.1653, 13.3438, -1);
 
 When you pick up a pickup, [OnPlayerPickUpPickup](../callbacks/OnPlayerPickUpPickup) is called, passing playerid (the player that picked up a pickup) and pickupid (the ID of the pickup that was picked up).
 
-Some pickup types are designed to work automatically, so there is no need to do anything under OnPlayerPickUpPickup. Check out the [Pickup Types](../scripting/resources/pickuptypes) page for more information.
+Some pickup types are designed to work automatically, so there is no need to do anything under OnPlayerPickUpPickup. Check out the [Pickup Types](../resources/pickuptypes) page for more information.
 
 When a player picks up our new pickup, we want to give them $100, to do this first we need to check that they have picked up our dollar pickup and not a different one. When we've done that, we can give them the $100:
 

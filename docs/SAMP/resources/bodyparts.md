@@ -2,7 +2,7 @@
 title: Body parts
 ---
 
-To be used with [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamags), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) and [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
+To be used with [OnPlayerGiveDamage](../callbacks/OnPlayerGiveDamage), [OnPlayerTakeDamage](../callbacks/OnPlayerTakeDamage) and [OnPlayerGiveDamageActor](../callbacks/OnPlayerGiveDamageActor).
 
 | ID  | Body Part |
 | --- | --------- |

@@ -13,7 +13,7 @@ Hello everyone, it surely is a nice quiet night, or at least it is at the compos
 
 In general, formatting a text is the act of manipulating it to visually improve its readability, be it changing the font’s family, color, weight and so on.
 
-Strings being an array of characters (_alphabets, numbers, symbols_), which we wouldn’t specifically call a text on itself but is referred as such when displayed, can be processed with the same approach, but unfortunately, SA-MP’s interpretation of pawn does not allow for much (_yet? Maybe never_), generally speaking changing the color is as far as we can get, yes, you can still change/customize the font, but that’s client-sided only, and yes, [GTA San Andreas](https://www.rockstargames.com/sanandreas/) (_the parent game_) does provide some extra fonts, but that only works on [textdraws](../scripting/resources/textdraws) and [gametext](../scripting/functions/GameTextForPlayer), this does cause limitations concerning text presentation, but hey, it’s been over a decade now, and we survived just fine.
+Strings being an array of characters (_alphabets, numbers, symbols_), which we wouldn’t specifically call a text on itself but is referred as such when displayed, can be processed with the same approach, but unfortunately, SA-MP’s interpretation of pawn does not allow for much (_yet? Maybe never_), generally speaking changing the color is as far as we can get, yes, you can still change/customize the font, but that’s client-sided only, and yes, [GTA San Andreas](https://www.rockstargames.com/sanandreas/) (_the parent game_) does provide some extra fonts, but that only works on [textdraws](../resources/textdraws) and [gametext](../functions/GameTextForPlayer), this does cause limitations concerning text presentation, but hey, it’s been over a decade now, and we survived just fine.
 
 ### String declaration
 
@@ -88,7 +88,7 @@ SA-MP limits characters that can be stored in a single string and keeps scripter
 
 If somehow these limits have been exceeded, few inconveniences might occur, it can even crash/freeze the server in some cases (_e.g. long textdraw strings_), in some other cases, the text would just truncate like the Menu title (_if it reaches 32 characters, it truncates back to 30_) and items.
 
-Besides the strict limits put on strings, there are many others concerning different stuff, you can view the complete list [here](../scripting/resources/limits).
+Besides the strict limits put on strings, there are many others concerning different stuff, you can view the complete list [here](../resources/limits).
 
 #### Assigning values
 
@@ -195,7 +195,7 @@ while (j++ < 'Z');
 
 All three of them will output the same exact string, _ABCDEFGHIJKLMNOPQRSTUVWXYZ_.
 
-If you found the loops above confusing, you might want to take a deeper look into how loops work, more on that can be found [here](../scripting/language/ControlStructures#loops) and [here](https://wiki.alliedmods.net/Pawn_Tutorial#Looping). Notice how I used characters in some logical conditions, like `j++ < 'Z'` that easily translates to `j++ < 90`, again, characters are treated like numbers, don’t feel strange, you’re welcome to check the _ASCII_ table whenever you’d like.
+If you found the loops above confusing, you might want to take a deeper look into how loops work, more on that can be found [here](../language/ControlStructures#loops) and [here](https://wiki.alliedmods.net/Pawn_Tutorial#Looping). Notice how I used characters in some logical conditions, like `j++ < 'Z'` that easily translates to `j++ < 90`, again, characters are treated like numbers, don’t feel strange, you’re welcome to check the _ASCII_ table whenever you’d like.
 
 Say, you want to fill a string with a number of one specific character, (e.g. “_AAAAAA_”, “_TTTTTT_”, “_vvvvvv_”, “_666_” (_no, it’s not a coincidence_)), the typical idea that might cross most of the scripters, is hard-coding it, but what about long strings, well, what about using a loop, that’s fine too, but what if I told you there is an even more efficient way, just like you’d fill an array with the same value, you’d do the same for strings.
 
@@ -638,11 +638,11 @@ Just like that, you can play with it the same way you do with its other sibling,
 
 #### Textdraws
 
-One of SA-MP’s most powerful functionalities, just unleash your imagination, textdraws are basically graphic shapes/texts/sprites/preview models...etc. that can be displayed on clients’ screens, they make the UI especially much more lively and interactive (_to an extent_). But hey, there are limitations here too, for example, you cannot display a string that’s more than 1024 characters long, to be honest, that’s more than enough. Nothing special can be said here, even with their wide functionality, strings that can be displayed are poor on formatting, you can’t do as much as you could with other output functions, it feels a little narrow when it comes to this, but it certainly does make up for the lack of formatting with other exciting stuff, more on textdraws [here](../scripting/resources/textdraws).
+One of SA-MP’s most powerful functionalities, just unleash your imagination, textdraws are basically graphic shapes/texts/sprites/preview models...etc. that can be displayed on clients’ screens, they make the UI especially much more lively and interactive (_to an extent_). But hey, there are limitations here too, for example, you cannot display a string that’s more than 1024 characters long, to be honest, that’s more than enough. Nothing special can be said here, even with their wide functionality, strings that can be displayed are poor on formatting, you can’t do as much as you could with other output functions, it feels a little narrow when it comes to this, but it certainly does make up for the lack of formatting with other exciting stuff, more on textdraws [here](../resources/textdraws).
 
 #### Dialogs
 
-Dialogs can be thought of as “_message boxes_”, they, of course, come in different types, accept few different inputs, and more importantly, accept all types of formatting that a normal string does, with makes them much easier to use than textdraw. There are limitations concerning them too, like string sizes and being able to only synchronously display them on the client’s screen, SA-MP only provides one native function for dealing with dialogs, and honestly, that would be one of your last concerns, as the lone function does its job, and does it efficiently, more on dialogs [here](../scripting/functions/ShowPlayerDialog).
+Dialogs can be thought of as “_message boxes_”, they, of course, come in different types, accept few different inputs, and more importantly, accept all types of formatting that a normal string does, with makes them much easier to use than textdraw. There are limitations concerning them too, like string sizes and being able to only synchronously display them on the client’s screen, SA-MP only provides one native function for dealing with dialogs, and honestly, that would be one of your last concerns, as the lone function does its job, and does it efficiently, more on dialogs [here](../functions/ShowPlayerDialog).
 
 ### Color interpretation
 
@@ -724,7 +724,7 @@ That was the general approach on color embedding with dialog and client messages
 
 #### Textdraws and Gametexts
 
-as mentioned above, **RGB** notation is not supported, but luckily, we have other ways to work around this problem, for textdraws, you can use the native [TextDrawColor](../scripting/functions/TextDrawColor) function to change the textdraw's color, but this the same to textdraw as **RGBA** color spaces are to client messages and dialogs, they can’t be embedded, for that, we use special combination of characters to refer to colors and few other symbols, you can see them [here](../scripting/resources/gametextstyles).
+as mentioned above, **RGB** notation is not supported, but luckily, we have other ways to work around this problem, for textdraws, you can use the native [TextDrawColor](../functions/TextDrawColor) function to change the textdraw's color, but this the same to textdraw as **RGBA** color spaces are to client messages and dialogs, they can’t be embedded, for that, we use special combination of characters to refer to colors and few other symbols, you can see them [here](../resources/gametextstyles).
 
 |                |        |
 | -------------- | ------ |
@@ -749,7 +749,7 @@ You can use another combination of characters to play with color mixes, **\~h\~*
 | \~r\~\~h\~\~h\~\~h\~\~h\~\~h\~ | Pink           |
 | \~g\~\~h\~                     | Light green    |
 
-You can find more information about this [here](../scripting/resources/colorslist).
+You can find more information about this [here](../resources/colorslist).
 
 ### The escape character
 
@@ -1512,7 +1512,7 @@ Hello w
 
 As you can see, dynamic precision values can be used both with the float and the string placeholders.
 
-A really cool trick we can pull off thanks to the precision field is get substrings, now, now, there are plenty of methods we can use to do that, and that without regarding the native [strfind](../scripting/functions/strfind) function, and let’s not forget the amazing functions we got at **Slice**’s [strlib](https://github.com/oscar-broman/strlib) include.
+A really cool trick we can pull off thanks to the precision field is get substrings, now, now, there are plenty of methods we can use to do that, and that without regarding the native [strfind](../functions/strfind) function, and let’s not forget the amazing functions we got at **Slice**’s [strlib](https://github.com/oscar-broman/strlib) include.
 
 Let’s see how we can get the same result using only the precision field.
 
@@ -1570,7 +1570,7 @@ Lua
 
 Putting all what we’ve seen so far to action, we can format our strings pretty match in anyway, so far we’ve worked in mainly in the console, utilizing the `print` and `printf` functions to output our data, well, mainly `printf` that is, thanks to its native support for formatting strings on the go, hence the f on the function’s name.
 
-But in the real world, most people don’t like looking at terminals, they are just too scary, and complicated to the average user, and as you all know, _client messages_ show up on the game’s screen, and not the console, however, those cannot be formatted on the go, they are more like a print function one might say, to bypass this limitation, we utilize and other very effective function, called `format`, we won’t go deeper on its definition, as we have already gone through explaining it on earlier parts, (refer to [this](../scripting/functions/format)), but, here is a reminder of its syntax;
+But in the real world, most people don’t like looking at terminals, they are just too scary, and complicated to the average user, and as you all know, _client messages_ show up on the game’s screen, and not the console, however, those cannot be formatted on the go, they are more like a print function one might say, to bypass this limitation, we utilize and other very effective function, called `format`, we won’t go deeper on its definition, as we have already gone through explaining it on earlier parts, (refer to [this](../functions/format)), but, here is a reminder of its syntax;
 
 ```cpp
 format(output[], len, const format[], {Float,_}: ...}
@@ -1696,24 +1696,24 @@ Don't let this example gatekeep or limit your expectations for what is possible 
 #### References
 
 - [GTA San Andreas](http://www.rockstargames.com/sanandreas/)
-- [Textdraw](../scripting/resources/textdraws#what-is-a-textdraw)
-- [Gametext](../scripting/functions/GameTextForPlayer)
-- [Limitations](../scripting/resources/limits)
+- [Textdraw](../resources/textdraws#what-is-a-textdraw)
+- [Gametext](../functions/GameTextForPlayer)
+- [Limitations](../resources/limits)
 - [ASCII](https://en.wikipedia.org/wiki/ASCII)
 - [ASCII table](http://www.asciitable.com/)
 - [Pawn Tutorial](https://wiki.alliedmods.net/Pawn_Tutorial)
-- [Control Structures](../scripting/language/ControlStructures)
+- [Control Structures](../language/ControlStructures)
 - [Null character](https://en.wikipedia.org/wiki/Null_character)
 - [RGBA color space](https://en.wikipedia.org/wiki/RGBA_color_space)
 - [Color picker](https://www.webpagefx.com/web-design/color-picker/)
-- [TextDrawColor](../scripting/functions/TextDrawColor)
-- [Gametext styles](../scripting/resources/gametextstyles)
-- [Color list](../scripting/resources/colorslist)
+- [TextDrawColor](../functions/TextDrawColor)
+- [Gametext styles](../resources/gametextstyles)
+- [Color list](../resources/colorslist)
 - [Escape sequence](https://en.wikipedia.org/wiki/Escape_sequence)
 - [r/programmerhumor](https://www.reddit.com/r/ProgrammerHumor/)
 - [Newline](https://en.wikipedia.org/wiki/Newline)
 - [Undefined behavior](https://en.wikipedia.org/wiki/Undefined_behavior)
 - [Bobby table](http://bobby-tables.com/about)
-- [strfind](../scripting/functions/strfind)
-- [format](../scripting/functions/format)
+- [strfind](../functions/strfind)
+- [format](../functions/format)
 - [Bitwise logical shift](https://en.wikipedia.org/wiki/Logical_shift)

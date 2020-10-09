@@ -35,13 +35,13 @@ The new system introduced in SA-MP 0.3a R5 server updated has several major adva
 
 The functions for setting and retrieving the player variables are:
 
-- [SetPVarInt](../scripting/functions/SetPVarInt) Set an integer for a player variable.
-- [GetPVarInt](../scripting/functions/GetPVarInt) Get the previously set integer from a player variable.
-- [SetPVarString](../scripting/functions/SetPVarString) Set a string for a player variable.
-- [GetPVarString](../scripting/functions/GetPVarString) Get the previously set string from a player variable.
-- [SetPVarFloat](../scripting/functions/SetPVarFloat) Set a float for a player variable.
-- [GetPVarFloat](../scripting/functions/GetPVarFloat) Get the previously set float from a player variable.
-- [DeletePVar](../scripting/functions/GetPVarFloat) Delete a player variable.
+- [SetPVarInt](../functions/SetPVarInt) Set an integer for a player variable.
+- [GetPVarInt](../functions/GetPVarInt) Get the previously set integer from a player variable.
+- [SetPVarString](../functions/SetPVarString) Set a string for a player variable.
+- [GetPVarString](../functions/GetPVarString) Get the previously set string from a player variable.
+- [SetPVarFloat](../functions/SetPVarFloat) Set a float for a player variable.
+- [GetPVarFloat](../functions/GetPVarFloat) Get the previously set float from a player variable.
+- [DeletePVar](../functions/GetPVarFloat) Delete a player variable.
 
 ```c
 #define PLAYER_VARTYPE_NONE   (0)

@@ -70,7 +70,7 @@ Colors List was added in **SA-MP 0.3c** and will not work in earlier versions!
 
 :::
 
-It is possible to use colors within text in [client messages](../functions/SendClientMessage"), [dialogs](../functions/ShowPlayerDialog), [3D text labels](../functions/Create3DTextLabel), [object material texts](../functions/SetObjectMaterialText) and [vehicle numberplates](../functions/SetVehicleNumberPlate").
+It is possible to use colors within text in [client messages](../functions/SendClientMessage), [dialogs](../functions/ShowPlayerDialog), [3D text labels](../functions/Create3DTextLabel), [object material texts](../functions/SetObjectMaterialText) and [vehicle numberplates](../functions/SetVehicleNumberPlate).
 
 It is very similar to [gametext colors](../resources/gametextstyles), but allows any color to be used.
 
@@ -127,7 +127,7 @@ format(msg, sizeof(msg), "{ffffff}This is white and {%06x}this is the player's c
 SendClientMessage(playerid, 0xffffffff, msg);
 ```
 
-The %x is the placeholder for hexadecimal values, the 6 ensures that the output string will always be six characters long and the 0 will pad it with zeros if it's not. Note that [GetPlayerColor](../resources/GetPlayerColor) only works properly if [SetPlayerColor](../resources/SetPlayerColor) has been used beforehand.
+The %x is the placeholder for hexadecimal values, the 6 ensures that the output string will always be six characters long and the 0 will pad it with zeros if it's not. Note that [GetPlayerColor](../Functions/GetPlayerColor) only works properly if [SetPlayerColor](../Functions/SetPlayerColor) has been used beforehand.
 
 The colors used in color embedding are not like normal hex colors in Pawn. There is no '0x' prefix and no alpha value (last 2 digits).
 

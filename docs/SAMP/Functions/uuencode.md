@@ -34,5 +34,5 @@ uuencode(encodedString, normalString, 45);
 
 ## Related Functions
 
-- [Uudecode](Undecode): Decode an UU-encoded stream.
+- [Uudecode](Uudecode): Decode an UU-encoded stream.
 - [Memcpy](Memcpy): Copy bytes from one location to another.

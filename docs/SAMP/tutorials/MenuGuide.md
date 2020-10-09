@@ -10,7 +10,7 @@ Menus look very complicated and difficult to script for the most players, althou
 
 ## First menu steps
 
-First we have to create a menu. The prefix before is `Menu:` this makes the variable the correct [tag](../scripting/language/tags). There are different types for different uses such as `Float:` `bool:` `Text3D:` etc. Write the following code near the top of your script:
+First we have to create a menu. The prefix before is `Menu:` this makes the variable the correct [tag](../language/tags). There are different types for different uses such as `Float:` `bool:` `Text3D:` etc. Write the following code near the top of your script:
 
 ```c
 new Menu:teleportmenu;
@@ -22,7 +22,7 @@ Okay, we created the variable to store the menu. Now we have to create the menu 
 teleportmenu = CreateMenu("Teleportmenu", 2, 200.0, 100.0, 150.0, 150.0);
 ```
 
-Now a bit of an explanation about the [CreateMenu](../scripting/functions/CreateMenu) arguments.
+Now a bit of an explanation about the [CreateMenu](../functions/CreateMenu) arguments.
 
 **Parameters:**
 
@@ -55,7 +55,7 @@ AddMenuItem(teleportmenu, 1, "4 Dragons");
 AddMenuItem(teleportmenu, 1, "Come-a-Lot");
 ```
 
-The explanation for [AddMenuItem](../scripting/functions/AddMenuItem):
+The explanation for [AddMenuItem](../functions/AddMenuItem):
 
 | menuid | The menuid of the menu where the item shall be displayed |
 | ------ | -------------------------------------------------------- |
@@ -64,7 +64,7 @@ The explanation for [AddMenuItem](../scripting/functions/AddMenuItem):
 
 ## Creating the effects for the items
 
-Okay, now that we have created a full menu with items what should happen when you choose an item? In our example we want to make a teleportmenu, so we should get teleported to the position we choose. When a player selects an item on a menu the script calls the callback [OnPlayerSelectedMenuRow](../scripting/callbacks/OnPlayerSelectedMenuRow). The best way to do it is to do it with a switch, this is like several if statements to check if a variable is worth certain values. But first we only want these effects for the menu we want so we need to create a variable that holds what menu the player is looking at, this is done with `GetPlayerMenu`:
+Okay, now that we have created a full menu with items what should happen when you choose an item? In our example we want to make a teleportmenu, so we should get teleported to the position we choose. When a player selects an item on a menu the script calls the callback [OnPlayerSelectedMenuRow](../callbacks/OnPlayerSelectedMenuRow). The best way to do it is to do it with a switch, this is like several if statements to check if a variable is worth certain values. But first we only want these effects for the menu we want so we need to create a variable that holds what menu the player is looking at, this is done with `GetPlayerMenu`:
 
 ```c
 new Menu:CurrentMenu = GetPlayerMenu(playerid);
@@ -151,6 +151,6 @@ Really easy, wasn't it?
 
 Okay, after you read this AND understood it, try your own menu. As you could see, it isn't that difficult, but will impress the players on your server all the more. And you can script really cool effects with this. It's also very cool for general stores or supermarkets for the things you can buy. Then you can subtract some money as effect and the price is shown in another column in the menu. But now, work on your own.
 
-You can also add [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) with `false` after `ShowPlayerMenu` and [TogglePlayerControllable](../scripting/functions/TogglePlayerControllable) with `true` at end of `OnPlayerSelectedMenuRow` so that player may not move while they are browsing menus.
+You can also add [TogglePlayerControllable](../functions/TogglePlayerControllable) with `false` after `ShowPlayerMenu` and [TogglePlayerControllable](../functions/TogglePlayerControllable) with `true` at end of `OnPlayerSelectedMenuRow` so that player may not move while they are browsing menus.
 
 I hope you learned something from this tutorial. If you have any questions, ask in the forums/discord.
