@@ -14,4 +14,4 @@ description: A list of Material Text Alignments
 
 ## Related Functions
 
-- [SetObjectMaterialText](/docs/scripting/functions/SetObjectMaterialText): Replace the texture of an object with text.
+- [SetObjectMaterialText](SetObjectMaterialText): Replace the texture of an object with text.

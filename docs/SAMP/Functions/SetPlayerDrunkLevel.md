@@ -47,4 +47,4 @@ Players' drunk level will automatically decrease over time, based on their FPS (
 
 ## Related Functions
 
-- [GetPlayerDrunkLevel](../scripting/functions/GetPlayerDrunkLevel): Returns the current drunk level of a player.
+- [GetPlayerDrunkLevel](GetPlayerDrunkLevel): Returns the current drunk level of a player.
