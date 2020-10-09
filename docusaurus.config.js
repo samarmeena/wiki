@@ -1,32 +1,30 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Indian Ocean Roleplay™ - WIKI',
+  tagline: 'documentation for SA-MP and IORP™',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'oceanroleplay', // Usually your GitHub org/user name.
+  projectName: 'wiki', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+    },
     navbar: {
-      title: 'My Site',
+      title: 'Indian Ocean Roleplay™',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Indian Ocean Roleplay™',
+        src: 'img/logo.png',
       },
       items: [
         {
           to: 'docs/',
           activeBasePath: 'docs',
           label: 'Docs',
-          position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        { to: 'blog', label: 'Blog' },
+
       ],
     },
     footer: {
@@ -36,12 +34,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Download and Install SAMP + Register Account?',
+              to: 'https://forum.iorp.in/topic/3/download-gta-sa-and-samp-indian-ocean-roleplay',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'How to get verified on discord?',
+              to: 'https://forum.iorp.in/topic/283/how-to-verify-forum-account-on-discord',
             },
           ],
         },
@@ -49,16 +47,16 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Indian Ocean Roleplay™',
+              href: 'https://iorp.in',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/Xq9k3hr',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Forum',
+              href: 'https://forum.iorp.in',
             },
           ],
         },
@@ -71,12 +69,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/oceanroleplay',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Indian Ocean Roleplay™`,
     },
   },
   presets: [
@@ -86,14 +84,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          // editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          // editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
