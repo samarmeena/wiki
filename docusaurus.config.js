@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'documentation for SA-MP and IORP™',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log',
   favicon: 'img/favicon.ico',
   organizationName: 'oceanroleplay', // Usually your GitHub org/user name.
   projectName: 'wiki', // Usually your repo name.
