@@ -20,4 +20,4 @@ description: Vehicle Information Type Constants
 
 ## Related Functions
 
-- [GetVehicleModelInfo](GetVehicleModelInfo): Retrieve information about a specific vehicle model such as the size or position of seats.
+- [GetVehicleModelInfo](../functions/GetVehicleModelInfo): Retrieve information about a specific vehicle model such as the size or position of seats.
