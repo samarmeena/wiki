@@ -12,7 +12,7 @@ Place an icon/marker on a player's map. Can be used to mark locations such as ba
 | Name       | Description                                                                                                                                                                         |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | playerid   | The ID of the player to set the map icon for.                                                                                                                                       |
-| iconid     | The player's icon ID, ranging from 0 to 99. This means there is a maximum of 100 map icons. ID can be used in [RemovePlayerMapIcon](/RemovePlayerMapIcon). |
+| iconid     | The player's icon ID, ranging from 0 to 99. This means there is a maximum of 100 map icons. ID can be used in [RemovePlayerMapIcon](RemovePlayerMapIcon). |
 | Float:x    | The X coordinate to place the map icon at.                                                                                                                                          |
 | Float:y    | The Y coordinate to place the map icon at.                                                                                                                                          |
 | Float:z    | The Z coordinate to place the map icon at.                                                                                                                                          |

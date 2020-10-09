@@ -62,8 +62,8 @@ This function returns 0 if either string is empty. Check for null strings with i
 - [strfind](strfind): Search for a string in another string.
 - [strtok](strtok): Get the next 'token' (word/parameter) in a string.
 - [strdel](strdel): Delete part of a string.
-- [strins](../function/strins): Insert text into a string.
-- [strlen](../function/strlen): Get the length of a string.
+- [strins](strins): Insert text into a string.
+- [strlen](strlen): Get the length of a string.
 - [strmid](strmid): Extract part of a string into another string.
 - [strpack](strpack): Pack a string into a destination string.
 - [strval](strval): Convert a string into an integer.
