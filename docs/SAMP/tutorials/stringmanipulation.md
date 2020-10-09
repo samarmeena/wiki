@@ -1665,7 +1665,7 @@ printf("%n", "samp");
 
 :::note
 
-Don't let this example gatekeep or limit your expectations for what is possible to achieve with custom specifiers, there are better examples at the main release page, [please go check it out](https://github.com/Southclaws/formatex/blob/master/README.md).
+Don't let this example gatekeep or limit your expectations for what is possible to achieve with custom specifiers, there are better examples at the main release page, [please go check it out](https://github.com/Southclaws/formatex/blob/master/README).
 
 :::
 
