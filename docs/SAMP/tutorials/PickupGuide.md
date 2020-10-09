@@ -18,6 +18,7 @@ There are two ways to create pickups. [CreatePickup](../functions/CreatePickup) 
 
 **The syntax for [CreatePickup](../functions/CreatePickup) is:**
 
+
 **Parameters:**
 
 | model        | The model you'd like to use for the pickup.                                                               |
