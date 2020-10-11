@@ -13,10 +13,7 @@ module.exports = {
     },
     navbar: {
       title: 'Indian Ocean Roleplay™',
-      logo: {
-        alt: 'Indian Ocean Roleplay™',
-        src: 'img/logo.png',
-      },
+      // logo: { alt: 'Indian Ocean Roleplay™', src: 'img/logo.png', },
       items: [
         {
           to: 'docs/',
