@@ -36,4 +36,3 @@ Shop System introduced to create dynamic checkpoints at any location to access s
 0. Operation Theater
 0. Mine Sweeper
 0. Race System
-0. Hotel System
