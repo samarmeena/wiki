@@ -21,7 +21,10 @@ const features = [
     // imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-       Haven't you heard The SA-MP wiki is down. The reason is unknown and we do not have an update if it is coming back or not. But we used the sa-mp archive to improve the sa-mp doumentaion and help you to learn native functions.
+        Haven't you heard The SA-MP wiki is down. The reason is unknown and we do not have an update if it is coming back or not. But we used the sa-mp archive to improve the sa-mp doumentaion and help you to learn native functions.
+        <br />
+        <br />
+       The sa-mp archive is primarily reproduced by the openmultiplayer team, we have cloned and modified there github repo for custom modifications. You can find the same on the github account of openmultiplayer.
       </>
     ),
   },
@@ -30,13 +33,13 @@ const features = [
     // imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-       We can use this site to update some tutorials and upcoming server documentation, you can find all the details on iorp.in
+        We can use this site to update some tutorials and upcoming server documentation, you can find all the details on iorp.in
       </>
     ),
   }
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
@@ -53,7 +56,7 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
       title={`${siteConfig.title}`}>
