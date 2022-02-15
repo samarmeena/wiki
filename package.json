@@ -36,5 +36,9 @@
   },
   "devDependencies": {
     "@docusaurus/types": "^2.0.0-beta.15"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
   }
 }
